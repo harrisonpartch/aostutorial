@@ -1,0 +1,18 @@
+<Desktop>
+	<Window name="WMKernelLog" loader="WMKernelLog.Restore" l="-114" t="106" r="526" b="526" flags="{0..2}"/>
+	<Window name="Notepad" loader="Notepad.Restore" l="995" t="214" r="1456" b="583" flags="{0..2}">
+		<NotepadData file="Turing.Tool" codecFormat="AUTO" firstLine="0" cursorPos="40" wordWrap="true"/>
+	</Window>
+	<Window name="PET" loader="PET.Restore" l="181" t="81" r="981" b="905" flags="{0..2}">
+		<PETData>
+			<General SelectedPageNr="0" ProjectTextFile=""/>
+			<Tab file="TuringPll.Mod" codecFormat="AUTO" compilerOptions="-b=AMD --warnings" showLabels="false" wordWrap="false">
+				<Editor firstLine="32" cursorPos="626"/>
+				<SplitEditor visible="false" firstLine="0" cursorPos="0" height="400"/>
+				<SearchPanel visible="false" wrap="false" casesensitive="true" backwards="false" highlight="false" searchString="" replaceString=""/>
+				<LogPanel height="115"/>
+				<SidePanel visible="true" width="250" scratchHeight="5"/>
+			</Tab>
+		</PETData>
+	</Window>
+</Desktop>
