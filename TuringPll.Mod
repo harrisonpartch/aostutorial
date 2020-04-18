@@ -10,9 +10,9 @@ CONST
 	
 TYPE TEngine=OBJECT
 VAR
-	istart, iend: LONGINT;
+	istart, iend: INTEGER;
 	
-PROCEDURE & init(n,m: LONGINT);
+PROCEDURE & init(n,m: INTEGER);
 BEGIN
 	istart:=n;
 	iend:=m;
@@ -24,7 +24,7 @@ BEGIN{EXCLUSIVE}
 END go;
 
 PROCEDURE tick;
-VAR i, j : LONGINT;
+VAR i, j : INTEGER;
 	a,b: REAL;
 BEGIN
 	FOR i := istart TO iend DO
@@ -60,10 +60,10 @@ END TEngine;
 TYPE TWindow* =  OBJECT(WM.BufferWindow)
 VAR
 	alive, dead, pause: BOOLEAN;
-	i : LONGINT;
+	i : INTEGER;
 	TD: INTEGER;
 		
-PROCEDURE KeyEvent (ucs : LONGINT; flags : SET; keysym : LONGINT);
+PROCEDURE KeyEvent (ucs : INTEGER; flags : SET; keysym : INTEGER);
 BEGIN
 	CASE CHR(ucs) OF
 		| 'q': Close
@@ -75,8 +75,8 @@ END KeyEvent;
 
 PROCEDURE &New*;
 VAR 
-	i, j : LONGINT;
-	tsize, tc: LONGINT;
+	i, j : INTEGER;
+	tsize, tc: INTEGER;
 BEGIN
 	Init(M*SZE, M*SZE, FALSE);
 	manager := WM.GetDefaultManager();
@@ -103,7 +103,7 @@ BEGIN
 	END;	
 END New;
 
-PROCEDURE Draw*(canvas : WMGraphics.Canvas; w, h, q : LONGINT);
+PROCEDURE Draw*(canvas : WMGraphics.Canvas; w, h, q : INTEGER);
 BEGIN
 	Draw^(canvas, w, h, 0)
 END Draw;
@@ -116,7 +116,7 @@ BEGIN
 END Close;
 
 PROCEDURE Generation;
-VAR i, j : LONGINT;
+VAR i, j : INTEGER;
 	a,b: REAL;
 BEGIN
 (* Calculate neighborhoods on the borders of the mesh. The interior is calculated in the parallel engines *)
@@ -145,7 +145,7 @@ BEGIN
 END Generation;
 
 PROCEDURE DrawIt;
-VAR i, j, ix, jy : LONGINT;
+VAR i, j, ix, jy : INTEGER;
 	pix : Raster.Pixel;
 	mode : Raster.Mode;
 BEGIN
@@ -184,7 +184,7 @@ VAR
 	tw: TWindow;
 	random : Random.Generator;
 	timer: Kernel.MilliTimer;
-	dt: LONGINT;
+	dt: INTEGER;
 	te: ARRAY 20 OF TEngine;
 	pll: BOOLEAN;
 	GO: BOOLEAN;
