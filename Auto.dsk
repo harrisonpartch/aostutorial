@@ -1,14 +1,14 @@
 <Desktop>
-	<Window name="WMKernelLog" loader="WMKernelLog.Restore" l="-114" t="106" r="526" b="526" flags="{0..2,13}"/>
 	<Window name="FileManager" loader="WMFileManager.Restore" l="169" t="375" r="732" b="867" flags="{0..2,13}"/>
+	<Window name="WMKernelLog" loader="WMKernelLog.Restore" l="-114" t="106" r="526" b="526" flags="{0..2,13}"/>
 	<Window name="FileManager" loader="WMFileManager.Restore" l="33" t="100" r="533" b="500" flags="{0..2,13}"/>
-	<Window name="PET" loader="PET.Restore" l="533" t="742" r="911" b="1020" flags="{0..2,13}">
+	<Window name="PET" loader="PET.Restore" l="33" t="100" r="833" b="700" flags="{0..2,13}">
 		<PETData>
 			<General SelectedPageNr="0" ProjectTextFile=""/>
-			<Tab file="/home/valentine/A2OS/Linux64/work/Turing.Tool" codecFormat="AUTO" compilerOptions="\check" showLabels="false" wordWrap="false">
-				<Editor firstLine="0" cursorPos="0"/>
+			<Tab file="/home/valentine/A2OS/Linux64/work/Configuration.XML" codecFormat="AUTO" compilerOptions="" showLabels="false" wordWrap="false">
+				<Editor firstLine="401" cursorPos="14985"/>
 				<SplitEditor visible="false" firstLine="0" cursorPos="0" height="400"/>
-				<SearchPanel visible="false" wrap="false" casesensitive="true" backwards="false" highlight="false" searchString="" replaceString=""/>
+				<SearchPanel visible="true" wrap="false" casesensitive="true" backwards="false" highlight="false" searchString="LineNumbers" replaceString=""/>
 				<LogPanel height="130"/>
 				<SidePanel visible="true" width="250" scratchHeight="5"/>
 			</Tab>
@@ -19,6 +19,18 @@
 			<General SelectedPageNr="0" ProjectTextFile=""/>
 			<Tab file="/home/valentine/A2OS/source/TuringCoatWnd.Mod" codecFormat="AUTO" compilerOptions="-b=AMD --warnings" showLabels="false" wordWrap="false">
 				<Editor firstLine="42" cursorPos="1419"/>
+				<SplitEditor visible="false" firstLine="0" cursorPos="0" height="400"/>
+				<SearchPanel visible="false" wrap="false" casesensitive="true" backwards="false" highlight="false" searchString="" replaceString=""/>
+				<LogPanel height="130"/>
+				<SidePanel visible="true" width="250" scratchHeight="5"/>
+			</Tab>
+		</PETData>
+	</Window>
+	<Window name="PET" loader="PET.Restore" l="533" t="742" r="911" b="1020" flags="{0..2,13}">
+		<PETData>
+			<General SelectedPageNr="0" ProjectTextFile=""/>
+			<Tab file="/home/valentine/A2OS/Linux64/work/Turing.Tool" codecFormat="AUTO" compilerOptions="\check" showLabels="false" wordWrap="false">
+				<Editor firstLine="0" cursorPos="0"/>
 				<SplitEditor visible="false" firstLine="0" cursorPos="0" height="400"/>
 				<SearchPanel visible="false" wrap="false" casesensitive="true" backwards="false" highlight="false" searchString="" replaceString=""/>
 				<LogPanel height="130"/>
